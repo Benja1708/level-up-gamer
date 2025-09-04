@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Level-Up Gamer</title>
+    <meta name="description" content="Revisa y gestiona los productos en tu carrito de compras en Level-Up Gamer.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Level-Up Gamer</h1>
+                <p class="tagline">¡Desafía tus límites!</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="carrito.html">Carrito <span id="cart-count">(0)</span></a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="login.html">Iniciar Sesión</a></li>
+                    <li><a href="perfil.html">Mi Perfil</a></li>
+                    <li><a href="soporte.html">Soporte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="cart-header">
+            <div class="container">
+                <h2>Carrito de Compras</h2>
+                <p>Revisa y gestiona los productos que deseas comprar.</p>
+            </div>
+        </section>
+
+        <section class="cart-content">
+            <div class="container">
+                <div class="cart-layout">
+                    <div class="cart-items-section">
+                        <div class="cart-items-header">
+                            <h3>Productos en tu carrito</h3>
+                            <button id="clear-cart" class="clear-cart-btn">Vaciar Carrito</button>
+                        </div>
+                        
+                        <div id="cart-items-container">
+                            <!-- Los productos del carrito se cargarán dinámicamente -->
+                        </div>
+
+                        <div id="empty-cart-message" class="empty-cart hidden">
+                            <div class="empty-cart-content">
+                                <h3>Tu carrito está vacío</h3>
+                                <p>¡Explora nuestro catálogo y encuentra productos increíbles!</p>
+                                <a href="catalogo.html" class="cta-button">Ir al Catálogo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-summary-section">
+                        <div class="cart-summary">
+                            <h3>Resumen del Pedido</h3>
+                            
+                            <div class="summary-line">
+                                <span>Subtotal:</span>
+                                <span id="cart-subtotal">$0</span>
+                            </div>
+                            
+                            <div class="summary-line" id="discount-line" style="display: none;">
+                                <span>Descuento Duoc (20%):</span>
+                                <span id="cart-discount">-$0</span>
+                            </div>
+                            
+                            <div class="summary-line">
+                                <span>Envío:</span>
+                                <span id="shipping-cost">Gratis</span>
+                            </div>
+                            
+                            <div class="summary-line total-line">
+                                <span>Total:</span>
+                                <span id="cart-total">$0</span>
+                            </div>
+
+                            <div class="discount-info">
+                                <div id="duoc-discount-info" class="discount-message hidden">
+                                    <p>🎓 ¡Tienes un 20% de descuento por ser estudiante Duoc!</p>
+                                </div>
+                                
+                                <div class="promo-code-section">
+                                    <label for="promo-code">Código promocional:</label>
+                                    <div class="promo-input-group">
+                                        <input type="text" id="promo-code" placeholder="Ingresa tu código">
+                                        <button id="apply-promo">Aplicar</button>
+                                    </div>
+                                    <div id="promo-message" class="promo-message hidden"></div>
+                                </div>
+                            </div>
+
+                            <div class="checkout-section">
+                                <button id="checkout-btn" class="checkout-button" disabled>
+                                    Proceder al Pago
+                                </button>
+                                <p class="checkout-note">
+                                    <small>* Los precios incluyen IVA. El pago se procesará de forma segura.</small>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="shipping-info">
+                            <h4>Información de Envío</h4>
+                            <ul>
+                                <li>✓ Envío gratis en compras sobre $50.000</li>
+                                <li>✓ Entrega en 2-5 días hábiles</li>
+                                <li>✓ Cobertura en todo Chile</li>
+                                <li>✓ Seguimiento en tiempo real</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recommended-products">
+            <div class="container">
+                <h3>También te puede interesar</h3>
+                <div class="products-grid" id="recommended-products-grid">
+                    <!-- Productos recomendados se cargarán dinámicamente -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Level-Up Gamer</h3>
+                    <p>Tu tienda gamer online de confianza en Chile.</p>
+                    <div class="social-links">
+                        <a href="#" onclick="shareOnFacebook()">Facebook</a>
+                        <a href="#" onclick="shareOnTwitter()">Twitter</a>
+                        <a href="#" onclick="shareOnInstagram()">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                        <li><a href="registro.html">Registro</a></li>
+                        <li><a href="soporte.html">Soporte</a></li>
+                        <li><a href="referidos.html">Programa de Referidos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Email: info@levelupgamer.cl</p>
+                    <p>Teléfono: +56 9 1234 5678</p>
+                    <a href="https://wa.me/56912345678" target="_blank" class="whatsapp-link">Soporte por WhatsApp</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Level-Up Gamer. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/main.js"></script>
+    <script src="src/js/productos.js"></script>
+    <script src="src/js/carrito.js"></script>
+</body>
+</html>
+
