@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Level-Up Gamer</title>
+    <meta name="description" content="Inicia sesión en Level-Up Gamer y accede a tu cuenta para gestionar tus compras y puntos LevelUp.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Level-Up Gamer</h1>
+                <p class="tagline">¡Desafía tus límites!</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="carrito.html">Carrito <span id="cart-count">(0)</span></a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="login.html">Iniciar Sesión</a></li>
+                    <li><a href="perfil.html">Mi Perfil</a></li>
+                    <li><a href="soporte.html">Soporte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="login-section">
+            <div class="container">
+                <h2>Iniciar Sesión</h2>
+                <p>Accede a tu cuenta Level-Up Gamer y continúa tu aventura gaming.</p>
+                
+                <div class="form-container">
+                    <form id="login-form" novalidate>
+                        <div class="form-group">
+                            <label for="email-login">Correo Electrónico *</label>
+                            <input type="email" id="email-login" name="email" required autocomplete="email">
+                            <div class="error-message" id="email-error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password-login">Contraseña *</label>
+                            <input type="password" id="password-login" name="password" required autocomplete="current-password">
+                            <div class="error-message" id="password-error"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" id="remember-me" name="remember-me">
+                                Recordar mi sesión
+                            </label>
+                        </div>
+
+                        <button type="submit" class="cta-button">Iniciar Sesión</button>
+                    </form>
+
+                    <div class="login-options">
+                        <p><a href="#" onclick="showForgotPassword()">¿Olvidaste tu contraseña?</a></p>
+                        <p>¿No tienes una cuenta? <a href="registro.html">Regístrate aquí</a></p>
+                    </div>
+                </div>
+
+                <div class="demo-accounts">
+                    <h3>Cuentas de Demostración</h3>
+                    <p>Para probar la aplicación, puedes usar estas cuentas de ejemplo:</p>
+                    <div class="demo-grid">
+                        <div class="demo-account">
+                            <h4>Usuario Regular</h4>
+                            <p><strong>Email:</strong> usuario@ejemplo.com</p>
+                            <p><strong>Contraseña:</strong> Usuario123</p>
+                            <button onclick="fillDemoAccount('usuario@ejemplo.com', 'Usuario123')" class="demo-button">Usar esta cuenta</button>
+                        </div>
+                        <div class="demo-account">
+                            <h4>Estudiante Duoc</h4>
+                            <p><strong>Email:</strong> estudiante@duoc.cl</p>
+                            <p><strong>Contraseña:</strong> Duoc123</p>
+                            <p><em>Incluye descuento del 20%</em></p>
+                            <button onclick="fillDemoAccount('estudiante@duoc.cl', 'Duoc123')" class="demo-button">Usar esta cuenta</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Level-Up Gamer</h3>
+                    <p>Tu tienda gamer online de confianza en Chile.</p>
+                    <div class="social-links">
+                        <a href="#" onclick="shareOnFacebook()">Facebook</a>
+                        <a href="#" onclick="shareOnTwitter()">Twitter</a>
+                        <a href="#" onclick="shareOnInstagram()">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                        <li><a href="registro.html">Registro</a></li>
+                        <li><a href="soporte.html">Soporte</a></li>
+                        <li><a href="referidos.html">Programa de Referidos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Email: info@levelupgamer.cl</p>
+                    <p>Teléfono: +56 9 1234 5678</p>
+                    <a href="https://wa.me/56912345678" target="_blank" class="whatsapp-link">Soporte por WhatsApp</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Level-Up Gamer. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/main.js"></script>
+    <script src="src/js/login.js"></script>
+</body>
+</html>
+
