@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level-Up Gamer - Tu tienda gamer online</title>
+    <meta name="description" content="Level-Up Gamer es tu tienda online de productos para gamers en Chile. Consolas, accesorios, computadores y más.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Level-Up Gamer</h1>
+                <p class="tagline">¡Desafía tus límites!</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="carrito.html">Carrito <span id="cart-count">(0)</span></a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                    <li><a href="login.html">Iniciar Sesión</a></li>
+                    <li><a href="perfil.html">Mi Perfil</a></li>
+                    <li><a href="soporte.html">Soporte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Bienvenido a Level-Up Gamer</h2>
+                <p>Tu tienda online de productos para gamers en Chile. Encuentra consolas, accesorios, computadores y mucho más.</p>
+                <a href="catalogo.html" class="cta-button">Explorar Catálogo</a>
+            </div>
+        </section>
+
+        <section class="featured-categories">
+            <div class="container">
+                <h2>Categorías Destacadas</h2>
+                <div class="categories-grid">
+                    <article class="category-card">
+                        <h3>Consolas</h3>
+                        <p>PlayStation 5, Xbox Series X y más</p>
+                        <a href="categoria-consolas.html">Ver Consolas</a>
+                    </article>
+                    <article class="category-card">
+                        <h3>Computadores Gamers</h3>
+                        <p>PCs de alto rendimiento para gaming</p>
+                        <a href="categoria-computadores.html">Ver Computadores</a>
+                    </article>
+                    <article class="category-card">
+                        <h3>Accesorios</h3>
+                        <p>Controles, auriculares y más</p>
+                        <a href="categoria-accesorios.html">Ver Accesorios</a>
+                    </article>
+                    <article class="category-card">
+                        <h3>Sillas Gamers</h3>
+                        <p>Comodidad para largas sesiones</p>
+                        <a href="categoria-sillas.html">Ver Sillas</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <div class="container">
+                <h2>Productos Destacados</h2>
+                <div class="products-grid">
+                    <article class="product-card">
+                        <img src="src/images/ps5.jpg" alt="PlayStation 5" loading="lazy">
+                        <h3>PlayStation 5</h3>
+                        <p class="price">$549.990 CLP</p>
+                        <button class="add-to-cart" data-product-id="CO001">Agregar al Carrito</button>
+                    </article>
+                    <article class="product-card">
+                        <img src="src/images/pc-gamer.jpg" alt="PC Gamer ASUS ROG Strix" loading="lazy">
+                        <h3>PC Gamer ASUS ROG Strix</h3>
+                        <p class="price">$1.299.990 CLP</p>
+                        <button class="add-to-cart" data-product-id="CG001">Agregar al Carrito</button>
+                    </article>
+                    <article class="product-card">
+                        <img src="src/images/silla-gamer.jpg" alt="Silla Gamer Secretlab Titan" loading="lazy">
+                        <h3>Silla Gamer Secretlab Titan</h3>
+                        <p class="price">$349.990 CLP</p>
+                        <button class="add-to-cart" data-product-id="SG001">Agregar al Carrito</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-us">
+            <div class="container">
+                <h2>Sobre Level-Up Gamer</h2>
+                <p>Somos una tienda online dedicada a satisfacer las necesidades de los entusiastas de los videojuegos en Chile. Lanzada hace dos años como respuesta a la creciente demanda durante la pandemia, ofrecemos una amplia gama de productos para gamers, desde consolas y accesorios hasta computadores y sillas especializadas.</p>
+                <p><strong>Misión:</strong> Proporcionar productos de alta calidad para gamers en todo Chile, ofreciendo una experiencia de compra única y personalizada, con un enfoque en la satisfacción del cliente y el crecimiento de la comunidad gamer.</p>
+                <p><strong>Visión:</strong> Ser la tienda online líder en productos para gamers en Chile, reconocida por su innovación, servicio al cliente excepcional, y un programa de fidelización basado en gamificación que recompense a nuestros clientes más fieles.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Level-Up Gamer</h3>
+                    <p>Tu tienda gamer online de confianza en Chile.</p>
+                    <div class="social-links">
+                        <a href="#" onclick="shareOnFacebook()">Facebook</a>
+                        <a href="#" onclick="shareOnTwitter()">Twitter</a>
+                        <a href="#" onclick="shareOnInstagram()">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                        <li><a href="registro.html">Registro</a></li>
+                        <li><a href="soporte.html">Soporte</a></li>
+                        <li><a href="referidos.html">Programa de Referidos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Email: info@levelupgamer.cl</p>
+                    <p>Teléfono: +56 9 1234 5678</p>
+                    <a href="https://wa.me/56912345678" target="_blank" class="whatsapp-link">Soporte por WhatsApp</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Level-Up Gamer. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>
+
