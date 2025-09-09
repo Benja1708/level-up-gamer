@@ -1,4 +1,3 @@
-// Funcionalidad del carrito de compras
 let carrito = [];
 let descuentoDuoc = false;
 let codigoPromoAplicado = null;
