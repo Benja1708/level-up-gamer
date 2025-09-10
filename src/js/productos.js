@@ -65,8 +65,8 @@ const productos = [
         categoria: 'consolas',
         nombre: 'Xbox Series X',
         precio: 499990,
-        imagen: 'src/images/productos/xbox-series-x.jpg',
-        descripcion: 'La consola más potente de Microsoft con capacidades 4K y retrocompatibilidad con miles de juegos.',
+        imagen: 'src/images/productos/Xbox-Series-Xx.jpg',
+        descripcion: 'La consola más potente de Microsoft con capacidades 4K y retrocompatibilidad con miles de juegos. ',
         stock: 7,
         rating: 4.8,
         reviews: 876

@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+/* Estilo base */
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +18,7 @@ body {
     padding: 0 20px;
 }
 
-/* Typography */
+/* Tipografia */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Orbitron', sans-serif;
     color: #1E90FF; /* Electric Blue */
@@ -55,7 +55,7 @@ a:hover {
     color: #1E90FF;
 }
 
-/* Header Styles */
+/* Estilos de encabezado */
 header {
     background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
     padding: 1rem 0;
@@ -103,7 +103,7 @@ nav ul li a:hover {
     color: #000000;
 }
 
-/* Hero Section */
+/* Hero Seccion */
 .hero {
     background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 50%, #1a1a1a 100%);
     padding: 4rem 0;
@@ -142,7 +142,7 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
-/* Sections */
+/* Secciones */
 section {
     padding: 3rem 0;
 }
@@ -156,7 +156,7 @@ section {
     background-color: #1a1a1a;
 }
 
-/* Grid Layouts */
+/* Disenio */
 .categories-grid,
 .products-grid {
     display: grid;
@@ -165,7 +165,7 @@ section {
     margin-top: 2rem;
 }
 
-/* Cards */
+/* Tarjetas */
 .category-card,
 .product-card {
     background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
@@ -207,7 +207,7 @@ section {
     margin-bottom: 1rem;
 }
 
-/* Buttons */
+/* Botones */
 .add-to-cart,
 button {
     background: linear-gradient(45deg, #1E90FF, #39FF14);
@@ -226,7 +226,7 @@ button:hover {
     box-shadow: 0 5px 15px rgba(30, 144, 255, 0.4);
 }
 
-/* Footer Styles */
+/* Estilo de pagina */
 footer {
     background-color: #0a0a0a;
     color: #D3D3D3;
@@ -286,7 +286,7 @@ footer {
     border-top: 1px solid #333;
 }
 
-/* Form Styles */
+/* Form Estilo */
 .form-container {
     max-width: 600px;
     margin: 2rem auto;
@@ -351,7 +351,7 @@ footer {
     display: none;
 }
 
-/* Cart Styles */
+/* Estilo de carrito */
 .cart-container {
     max-width: 800px;
     margin: 2rem auto;
@@ -443,7 +443,7 @@ footer {
     margin-bottom: 1rem;
 }
 
-/* Benefits Section */
+/* Seccion de beneficios */
 .benefits-section {
     background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
     margin: 2rem auto;
@@ -478,7 +478,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Demo Accounts */
+/* Cuentas demo */
 .demo-accounts {
     background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
     margin: 2rem auto;
@@ -517,7 +517,7 @@ footer {
     color: #1E90FF;
 }
 
-/* Validation Styles */
+/* validacion de estilos */
 .form-group input.error,
 .form-group select.error {
     border-color: #FF6B35;
@@ -530,7 +530,7 @@ footer {
     box-shadow: 0 0 10px rgba(57, 255, 20, 0.3);
 }
 
-/* Checkbox styling */
+/* Casilla de verificacion */
 .form-group input[type="checkbox"] {
     width: auto;
     margin-right: 0.5rem;
@@ -547,7 +547,7 @@ footer {
     margin-right: 0.8rem;
 }
 
-/* Responsive adjustments for forms */
+/* Ajustes */
 @media (max-width: 768px) {
     .benefits-grid,
     .demo-grid {
@@ -566,7 +566,7 @@ footer {
 }
 
 
-/* Catalog Styles */
+/* Estilo de catalogo */
 .catalog-header {
     background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
     padding: 3rem 0;
@@ -660,7 +660,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Product Card Enhancements */
+/* Mejoras en la tarjeta del producto */
 .product-rating {
     margin-bottom: 1rem;
     text-align: center;
@@ -728,7 +728,7 @@ footer {
     box-shadow: none;
 }
 
-/* No Products Message */
+/* Mensaje de No productos */
 .no-products {
     grid-column: 1 / -1;
     text-align: center;
@@ -747,7 +747,7 @@ footer {
     color: #D3D3D3;
 }
 
-/* Pagination Styles */
+/* Estilos de pagina */
 .pagination {
     padding: 2rem 0;
     background-color: #0a0a0a;
@@ -789,7 +789,7 @@ footer {
     transform: none;
 }
 
-/* Category Cards in Catalog */
+/* Tarjetas de categoría en el catálogo */
 .categories-grid .category-card {
     background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
     border: 1px solid #333;
@@ -816,7 +816,7 @@ footer {
     transform: translateY(-2px);
 }
 
-/* Responsive Design */
+/* Disenio */
 @media (max-width: 768px) {
     header .container {
         flex-direction: column;
@@ -904,7 +904,7 @@ footer {
     }
 }
 
-/* Utility Classes */
+/* Clases de utilidad */
 .text-center {
     text-align: center;
 }
@@ -933,13 +933,13 @@ footer {
     margin-top: 2rem;
 }
 
-/* Loading States */
+/* Cargando estados */
 .loading {
     opacity: 0.6;
     pointer-events: none;
 }
 
-/* Success and Error States */
+/* Estados de Éxito y Error */
 .success {
     color: #39FF14;
 }
@@ -948,7 +948,7 @@ footer {
     color: #FF6B35;
 }
 
-/* Animations */
+/* Animaciones */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -964,7 +964,7 @@ footer {
     animation: fadeIn 0.5s ease-out;
 }
 
-/* Accessibility */
+/* Accesibilidad */
 .sr-only {
     position: absolute;
     width: 1px;
@@ -977,7 +977,7 @@ footer {
     border: 0;
 }
 
-/* Focus styles for better accessibility */
+/* Estilos de enfoque para una mejor accesibilidad */
 button:focus,
 input:focus,
 select:focus,
@@ -987,7 +987,7 @@ a:focus {
     outline-offset: 2px;
 }
 
-/* High contrast mode support */
+/* Contraste alto para el soporte */
 @media (prefers-contrast: high) {
     .category-card,
     .product-card {
@@ -1000,7 +1000,7 @@ a:focus {
     }
 }
 
-/* Reduced motion support */
+/* Soporte */
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,

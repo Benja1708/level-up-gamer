@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Level-Up Gamer website loaded!');
 
-    // Example: Basic form validation (will be expanded later)
+
     const registrationForm = document.querySelector('#registration-form');
     if (registrationForm) {
         registrationForm.addEventListener('submit', (event) => {
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 alert('Debes ser mayor de 18 años para registrarte.');
             } else {
                 alert('Registro exitoso!');
-                registrationForm.submit(); // Or handle with AJAX
+                registrationForm.submit();
             }
         });
     }
